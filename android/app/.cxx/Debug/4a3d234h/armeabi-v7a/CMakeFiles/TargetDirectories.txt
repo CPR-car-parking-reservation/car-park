@@ -1,0 +1,2 @@
+C:/Users/User/Desktop/Project/CPR/car-park/android/app/.cxx/Debug/4a3d234h/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/User/Desktop/Project/CPR/car-park/android/app/.cxx/Debug/4a3d234h/armeabi-v7a/CMakeFiles/rebuild_cache.dir

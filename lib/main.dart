@@ -1,3 +1,6 @@
+import 'dart:developer';
+
+import 'package:car_parking_reservation/admin/%E0%B9%89admin_home.dart';
 import 'package:car_parking_reservation/reserv.dart';
 import 'package:car_parking_reservation/setting.dart';
 import 'package:flutter/material.dart';
@@ -6,8 +9,10 @@ import 'Login/signup.dart';
 import 'Login/welcome.dart';
 import 'home.dart';
 import 'history.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() {
+void main() async {
+  await dotenv.load(fileName: ".env");
   runApp(const MyApp());
 }
 
@@ -41,7 +46,7 @@ class CprHomePage extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => Welcome(),
+        '/': (context) => AdminHomePage(),
         '/signin': (context) => Signin(),
         '/signup': (context) => Signup(),
         '/home': (context) => Home(),
